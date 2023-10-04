@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Checkout\Model\Cart">
+        <plugin name="apply_coupon_on_add_to_cart" type="Barber\Sheffield\Plugin\CartPlugin" sortOrder="10" disabled="false"/>
+    </type>
+    <type name="Magento\Quote\Model\Quote">
+        <plugin name="remove_coupon_on_product_removal" type="Barber\Sheffield\Plugin\CartDiscountRemovePlugin" sortOrder="11" disabled="false"/>
+    </type>
+</config>

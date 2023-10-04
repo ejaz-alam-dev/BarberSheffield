@@ -1,0 +1,22 @@
+{
+    "name": "barber/module-sheffield",
+    "description": "Sheffield Test Module",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Ejaz Alam",
+            "email": "ejazalam518@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Barber\\Sheffield\\": ""
+        }
+    }
+}

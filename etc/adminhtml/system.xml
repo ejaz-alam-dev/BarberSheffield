@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="sheffield_barber" translate="label" sortOrder="999">
+			<label>Sheffield Barber</label>
+		</tab>
+		<section id="configurations" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+			<label>Configurations</label>
+			<tab>sheffield_barber</tab>
+			<resource>Barber_Sheffield::config_barber_sheffield</resource>
+			<group id="module_configs" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+				<label>Module Configs</label>
+				<field id="enable_promotion" type="select" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+					<label>enable_promotion</label>
+					<comment/>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="promotion_message" type="textarea" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+					<label>promotion_message</label>
+					<comment/>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
